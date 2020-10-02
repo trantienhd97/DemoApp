@@ -93,12 +93,13 @@ const styles = StyleSheet.create({
         height: 250,
     },
     viewInput: {
-        flex: 1,
         alignItems: 'center',
         marginTop: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     viewBottom: {
-        flex: 2,
+        flex: 1,
         justifyContent: 'space-between',
         alignItems: 'center',
     },
