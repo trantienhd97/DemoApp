@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, StyleSheet, TextInput, Dimensions, TouchableOpacity, ImageBackground} from 'react-native';
+import {Text, View, StyleSheet, TextInput, Dimensions, TouchableOpacity, Image} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
 const windowWidth = Dimensions.get('window').width;
@@ -40,7 +40,7 @@ export default function LoginScreen() {
         <View style={styles.container}>
             <StatusBar style="light" />
             <View style={styles.viewHeader}>
-                <ImageBackground source={require('../../assets/Image/login.jpg')} style={{width: windowWidth, height: 250,  resizeMode: 'contrain'}}/>
+                <Image source={require('../../assets/Image/login.jpg')} style={{width: windowWidth, height: 250,  resizeMode: 'contain'}}/>
             </View>
             <View style={styles.viewInput}>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -96,7 +96,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginTop: 30,
         justifyContent: 'center',
-        alignItems: 'center',
     },
     viewBottom: {
         flex: 1,
