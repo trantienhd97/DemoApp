@@ -40,7 +40,8 @@ export default function InstagramScreen() {
     const [data, setData] = React.useState<StoriesType[]>(dataStories);
 
     const handleLike = (item: StoriesType)=> () => {
-        const dataNew: StoriesType[] = dataStories.map((itemCurrent) => itemCurrent?.id === item?.id ? {...itemCurrent, like: !item.like} : itemCurrent);
+        const dataNew: StoriesType[] = dataStories.map(
+            (itemCurrent) => itemCurrent?.id === item?.id ? {...itemCurrent, like: !item.like} : itemCurrent);
         setData(dataNew);
     }
 

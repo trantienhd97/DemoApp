@@ -34,7 +34,7 @@ export default function ContentView (props: ContentViewProps) {
                         <Text style={{fontWeight: 'bold', marginLeft: 10}}>{item?.name}</Text>
                     </View>
                 </View>
-                <AntDesign name="ellipsis1" size={24} color="black" />
+                <TouchableOpacity><AntDesign name="ellipsis1" size={24} color="black" /></TouchableOpacity>
             </View>
             <TouchableOpacity onPress={viewContent}>
                 <Image source={{uri: item?.uri ? item?.uri : 'https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png'}} style={{height: windowHeight, width: windowWidth}} />
